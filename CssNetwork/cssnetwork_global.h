@@ -1,0 +1,12 @@
+#ifndef CSSNETWORK_GLOBAL_H
+#define CSSNETWORK_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CSSNETWORK_LIBRARY)
+#  define CSSNETWORKSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CSSNETWORKSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CSSNETWORK_GLOBAL_H
